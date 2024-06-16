@@ -1,0 +1,17 @@
+services:
+  app:
+    image: magic-vente-stock
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    secrets:
+      - MAGIC_VENTE_STOCK_DB_USERNAME
+      - MAGIC_VENTE_STOCK_DB_PASSWORD
+
+secrets:
+  MAGIC_VENTE_STOCK_DB_USERNAME:
+    file: db_username.txt
+  MAGIC_VENTE_STOCK_DB_PASSWORD:
+    file: db_password.txt
