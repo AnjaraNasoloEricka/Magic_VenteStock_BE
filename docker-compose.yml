@@ -14,6 +14,6 @@ services:
 
 secrets:
   MAGIC_VENTE_STOCK_DB_USERNAME:
-    file: /etc/secrets/db_username.txt
+    file: ./etc/secrets/db_username.txt
   MAGIC_VENTE_STOCK_DB_PASSWORD:
-    file: /etc/secrets/db_password.txt
+    file: ./etc/secrets/db_password.txt
