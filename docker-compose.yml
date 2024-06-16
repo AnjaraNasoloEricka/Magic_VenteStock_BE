@@ -9,6 +9,8 @@ services:
     secrets:
       - MAGIC_VENTE_STOCK_DB_USERNAME
       - MAGIC_VENTE_STOCK_DB_PASSWORD
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
 
 secrets:
   MAGIC_VENTE_STOCK_DB_USERNAME:
