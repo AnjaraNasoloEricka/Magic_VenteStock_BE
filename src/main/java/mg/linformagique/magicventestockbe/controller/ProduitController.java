@@ -2,6 +2,7 @@ package mg.linformagique.magicventestockbe.controller;
 
 import mg.linformagique.magicventestockbe.models.Produit;
 import mg.linformagique.magicventestockbe.services.ProduitService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,7 +19,7 @@ public class ProduitController {
     }
 
     @GetMapping("/produit-du-jour")
-    public Produit getProduitDuJour() {
-        return produitService.getProduitDuJour();
+    public ResponseEntity<Produit> getProduitDuJour() {
+        return ResponseEntity.ok(produitService.getProduitDuJour());
     }
 }
