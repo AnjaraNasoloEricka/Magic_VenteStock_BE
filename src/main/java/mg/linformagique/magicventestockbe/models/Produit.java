@@ -3,8 +3,10 @@ package mg.linformagique.magicventestockbe.models;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "t_produit")
 public class Produit {
     @Id
     private Integer id;
