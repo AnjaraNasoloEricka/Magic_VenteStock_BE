@@ -10,5 +10,5 @@ public interface ProduitRepository extends Repository<Produit, Integer> {
     @Query("select p from Produit p where p.estDuJour = true")
     Produit getProduitDuJour();
 
-    List<Produit> getProduits();
+    List<Produit> findAll();
 }

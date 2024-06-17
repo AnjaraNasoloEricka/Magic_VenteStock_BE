@@ -20,6 +20,6 @@ public class ProduitService {
     }
 
     public List<Produit> getAllProduits() {
-        return produitRepository.getProduits();
+        return produitRepository.findAll();
     }
 }
